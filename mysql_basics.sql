@@ -62,6 +62,31 @@ ALTER TABLE person
 ADD COLUMN email varchar(255);
 
 
+SELECT *FROM person 
+WHERE personid BETWEEN 1 AND 4;
 
 
 
+CREATE TABLE newperson (personid int not null , firstName varchar (255) not null,
+lastName varchar (255)not null,product varchar(255) not null,price int not null ,
+ primary key (personid));
+INSERT INTO newperson(personid, firstName ,
+lastName,product ,price)
+values(1,"jos","rr","car",50000);
+INSERT INTO newperson(personid, firstName ,
+lastName,product ,price)
+values(1,"sam","roy","cycle",5000);
+INSERT INTO newperson(personid, firstName ,
+lastName,product ,price)
+values(3,"raju","kuttan","toy",150);
+INSERT INTO newperson(personid, firstName ,
+lastName,product ,price)
+values(4,"jijji","ss","soup",10);
+INSERT INTO newperson(personid, firstName ,
+lastName,product ,price)
+values(5,"dhamu","sundhar","book",60);
+INSERT INTO newperson(personid, firstName ,
+lastName,product ,price)
+values(6,"gauri","shankar","water",50);
+
+DROP TABLE newperson;
